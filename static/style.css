@@ -6,8 +6,11 @@ html, body{
     height: 100%;
 }
 
+
+
+
 #header {
-    position: fixed;
+    position:fixed;
       top: 0;
       left: 0;
       right:  0;
@@ -19,7 +22,10 @@ html, body{
       z-index: 9997;
 }
 
-
+.carouselExampleControl{
+    width: auto;
+    
+}
 
 .navbar-brand{
     font-size: 24px;  
@@ -80,4 +86,6 @@ section#inicio{
 
 
 }
+
+
 
