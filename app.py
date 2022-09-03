@@ -1,6 +1,10 @@
 
 from flask import Flask, render_template, request, redirect, flash
 from flask_mail import Mail, Message
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 
 app = Flask(__name__)
 app.secret_key = 'gabimc'
@@ -10,8 +14,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": 'gabriellecode@gmail.com',    
-    "MAIL_PASSWORD": 'bzqnmosujaceeazz'
+    "MAIL_USERNAME": os.getenv("EMAIL"),
+    "MAIL_PASSWORD": os.getenv("SENHA")
     #o email e a senha estarão em um outro arquivo, o config, de onde o importamos para que não fique aparecendo na tela do app.py
 }
 
