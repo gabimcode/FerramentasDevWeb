@@ -11,7 +11,7 @@ mail_settings = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": 'gabriellecode@gmail.com',    
-    "MAIL_PASSWORD": '****************'
+    "MAIL_PASSWORD": 'bzqnmosujaceeazz'
     #o email e a senha estarão em um outro arquivo, o config, de onde o importamos para que não fique aparecendo na tela do app.py
 }
 
