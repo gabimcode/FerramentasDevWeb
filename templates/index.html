@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  
+  <!-- div para inserir o carrossel no inicio do site, usando bootstrap-->
   <div id="carouselExampleControls" class="carousel Slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -30,6 +30,7 @@
         <img src="../static/img/coding.png" class="d-block w-100" alt="...">
       </div>
     </div>
+    <!-- botao para visualizar as imagens do carrossel sem esperar o tempo -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -40,12 +41,10 @@
     </button>
   </div>
 
+  <!-- aside criado para deixar fixado-->
   <aside id='header'>
 
-
-
-    </section>
-
+    <!-- uso da navbar(barra de navegação), ja incluindo os icones e referencias para conseguir linkar mais tarde -->
     <nav id="navigation" class="navbar navbar-expand-lg">
       <h1 class="navbar-brand" href="#"> Dev. Gabi March &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -55,51 +54,59 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
+          <!-- link e icone da seção inicio-->
           <li class="nav-item active">
             <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Inicio</a>
           </li>
+          <!-- link e icone para a seção sobre-->
           <li class="nav-item">
             <a class="nav-link" href="#aboutme"><i class="bi bi-person-fill"></i> Sobre</a>
           </li>
+          <!-- link e icone para a seção formação-->
           <li class="nav-item">
             <a class="nav-link" href="#education"><i class="bi bi-mortarboard-fill"></i> Formacao</a>
           </li>
+          <!-- link e icone para a seção portfolio-->
           <li class="nav-item">
             <a class="nav-link" href="#portfolio"> <i class="bi bi-collection-fill"></i> Portfolio</a>
           </li>
+          <!-- link e icone para a seção contato-->
           <li class="nav-item">
             <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i> Contato</a>
           </li>
+          <!-- link e icone para redirecionar para meu linkedIn-->
           <li>
             <a target="_blank" class="nav-link" aria-current="page"
               href="https://www.linkedin.com/in/gabrielle-marchioro-15645320b"> <i class="bi bi-linkedin"></i>
               LinkedIn</a>
           </li>
           <li>
-            <a target="_blank" class="nav-link" aria-current="page" href= "https://github.com/gabimcode"> <i
+            <!-- link e icone para redirecionar ao meu github-->
+            <a target="_blank" class="nav-link" aria-current="page" href="https://github.com/gabimcode"> <i
                 class="bi bi-github"></i> GitHub</a>
           </li>
-
         </ul>
       </div>
     </nav>
-
-
   </aside>
 
+  <!-- parte principal do site-->
   <main id="main">
-
+    <!-- criação da classe sobre-->
     <div id="aboutme" class="section">
+      <!-- criação do conteiner que comportará as escritas-->
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-5" data-anime="left">
+            <!-- inserção da foto-->
             <img class="iam" src="../static/img/gabsfoto.png">
           </div>
           <div class="col-md-5" data-anime="up">
+            <!--inserção dos textos-->
             <h4 class="about-title">Olá, tudo bem?</h4>
             <br>
             <div class="about-corpo">
+              <!-- sobre mim: curiosidades e hobbiee-->
               <p>Me chamo Gabi, tenho 20 anos e sou de Curitiba/PR!</p>
               <p>Aqui vão algumas curiosidades sobre mim: </p>
               <ul>
@@ -111,19 +118,18 @@
               <p>Esse site foi criado utilizando: HTML5, CSS3, Javascript, Bootstrap e Python.</p>
             </div>
           </div>
-
         </div>
-
-
       </div>
-
     </div>
-
+    <!-- criação da seção Formação-->
     <div id="education" class="section">
+      <!-- criação do conteiner que comportará as escritas-->
       <div class="container pb-5">
         <div class="row">
+          <!-- criação de uma metade para inserir informações e uso do data anime para animação-->
           <div class="col-md-6" data-anime="left">
-            <h3 class="cv-title">Formações</h3>
+            <!-- animar da esquerda p direita-->
+            <h3 class="cv-title">Formações</h3> <!-- inserção das formações-->
             <br>
             <div class="cv-item">
               <h4>Ensino Médio</h4>
@@ -139,8 +145,10 @@
               <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
             </div>
           </div>
+          <!-- criação de outra metade para inserir informações e uso do data anime para animação-->
           <div class="col-md-6" data-anime="left">
-            <h3 class="cv-title">Cursos</h3>
+            <!-- animar da esquerda p direita-->
+            <h3 class="cv-title">Cursos</h3> <!-- inserção dor cursos realizados-->
             <br>
             <div class="cv-item">
               <h4>Inglês</h4>
@@ -153,99 +161,78 @@
               <h4>Inglês</h4>
               <h5>2021</h5>
               <p><em>U-Best UNINTER</em></p>
-              <p>Intermediario: curso de língua inglesa U-best, ofertado em nível de extensão universitária e realizado na modalidade EAD.</p>
+              <p>Intermediario: curso de língua inglesa U-best, ofertado em nível de extensão universitária e realizado
+                na modalidade EAD.</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
-
-    </div>
+    <!-- criação da seção portfólio -->
     <div id="portfolio" class="section">
-
+      <!-- criação do conteiner que comportará as escritas-->
       <div class="container">
-
         <div class="row">
-
           <div class="heading">
+            <!-- titulo da seção-->
             <h2 class="port-title" data-anime="right">PORTFOLIO</h2>
           </div>
-
+          <!-- criação da classe itens do conteiner-->
           <div class="itemsContainer">
-
             <ul class="items">
-
+              <!-- imagens da linguagem que foi utilizada-->
               <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3" data-anime="right">
                 <div class="item">
                   <img src="../static/img/java.png">
-
-                  <div class="icons">
-                    </a>
-                    <a href="https://github.com/gabimcode/MeuJogoDaVelha" target="_blank" class="projectLink">
+                  <!-- icone de link para ter acesso ao github do projeto-->
+                  <div class="icons"> </a>
+                    <a href="https://github.com/gabimcode/MeuJogoDaVelha" target="_blank"             class="projectLink">
                       <i class="bi bi-link"></i>
                     </a>
                   </div>
-
                   <div class="imageOverlay"></div>
-
                 </div>
-
-
               </li>
-
+              <!-- imagens da linguagem que foi utilizada-->
               <li onclick="" class="playerc col-xs-6 col-sm-4 col-md-3 col-lg-3" data-anime="right">
                 <div class="item">
                   <img src="../static/img/logoC.png">
-
+                  <!-- icone de link para ter acesso ao github do projeto-->
                   <div class="icons">
-                    </a>
                     <a href="https://github.com/gabimcode/ProjetosConsoleC/tree/master/Player" target="_blank"
                       class="projectLink">
-                      <i class="bi bi-link"></i>
-                    </a>
+                      <i class="bi bi-link"></i></a>
                   </div>
-
                   <div class="imageOverlay"></div>
-
                 </div>
-
-
               </li>
+              <!-- imagens da linguagem que foi utilizada-->
               <li onclick="" class="cadastroalunosc col-xs-6 col-sm-4 col-md-3 col-lg-3" data-anime="right">
                 <div class="item">
                   <img src="../static/img/logoC.png">
-
+                  <!-- icone de link para ter acesso ao github do projeto-->
                   <div class="icons">
                     <a href="https://github.com/gabimcode/ProjetosConsoleC/tree/master/CadastroAlunos" target="_blank"
                       class="projectLink">
-                      <i class="bi bi-link"></i>
-                    </a>
+                      <i class="bi bi-link"></i></a>
                   </div>
-
                   <div class="imageOverlay"></div>
-
                 </div>
-
-
               </li>
-
             </ul>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
+    <!--- criação da seção contato-->
     <section id="contact" class="pt-5 pb-5" data-anime="left">
+      <!-- criação do container com margin top e margin bottom-->
       <div class="container mt-4 mb-5">
         <div class="row">
-          <div class="col-md-5">
-            <div class="card p-5 shadow border-0">
+          <div class="col-md-5"> <!-- dividindo o espaço (12 = 5 para este e 7 para outro)-->
+            <div class="card p-5 shadow border-0"> <!--criação de um card para inserção dos dados de uma maneira diferente-->
+
+              <!-- inserindo endereço e email para contato juntamente com um mapa de minha área-->
               <div class="endereco">
                 <h5><i class="bi bi-geo-alt"></i> Localização</h5>
                 <p><em>Curitiba, PR</em></p>
@@ -261,25 +248,24 @@
             </div>
           </div>
 
-          <div class="col-md-7" data-anime="right">
-            <div class="card p-5 h-100 shadow border-0">
-              <form class="row g-3" action='/send' method="POST">
+          <div class="col-md-7" data-anime="right">   <!-- dividindo o espaço (12 = 5 para o outro e 7 para este)-->
+            <div class="card p-5 h-100 shadow border-0"> <!--criação de um card para inserção dos dados da mensagem de uma maneira diferente-->
+              <!-- form do bootstrap-->
+              <form class="row g-3" action='/send' method="POST"> <!-- utilizando açao e método para conseguir enviar os dados da pessoa para um email-->
                 <div class="col-md-6">
                   <label for="nome" class="form-label">Nome: </label>
-                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome..."
-                    required>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome..." required> <!-- pessoa que deseja fazer o contato, insere o dado-->
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email: </label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email..."
-                    required>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email..." required><!-- pessoa que deseja fazer o contato, insere o dado-->
                 </div>
                 <div class="col-12">
                   <label for="mensagem" class="form-label">Mensagem: </label>
-                  <textarea type="text" class="form-control" id="mensagem" placeholder="Digite aqui sua mensagem..."
-                    name="mensagem" rows="10" required></textarea>
+                  <textarea type="text" class="form-control" id="mensagem" placeholder="Digite aqui sua mensagem..." name="mensagem" rows="10" required></textarea> <!-- pessoa que deseja fazer o contato, insere o dado-->
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-4">
+                  <!-- botão enviar + botão enviando que aparece quando a pessoa clica para enviar os dados-->
                   <button id="btn-enviar" type="submit" class="btn-outline-primary">Enviar</button>
                   <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -289,18 +275,10 @@
               </form>
             </div>
           </div>
-
         </div>
       </div>
-      </div>
-      </div>
-      </div>
     </section>
-
-
-    <div>
-
-      </section>
+    <!-- usando o flash para devolver um alerta de mensagem enviada e um botão para remover essa mensagem no tempo necessário-->
       {% with messages = get_flashed_messages() %}
       {% if messages %}
       {% for message in messages %}
@@ -311,17 +289,14 @@
       {% endfor %}
       {% endif %}
       {% endwith %}
-
-
-   
   </main>
 
   <footer class="copyrightSection">
-        <div id="copy" class="col-md-12 text-center">
-          <br>
-          <p>&copy; Copyright <strong>Gabrielle M.</strong></p>
-          <br>
-        </div>
+    <div id="copy" class="col-md-12 text-center">
+      <br>
+      <p>&copy; Copyright <strong>Gabrielle M.</strong></p>
+      <br>
+    </div>
   </footer>
 
   <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
