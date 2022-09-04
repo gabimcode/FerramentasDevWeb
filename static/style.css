@@ -1,28 +1,28 @@
+/*importando a fonte que quero utilizar no portfolio*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* definindo o tamanho da fonte*/
 html, body{ 
     font-family: Roboto Slab, Arial;
     width: 100%;
     height: 100%;
 }
-
+/*definindo a posição, tamanho e cor do cabeçalho*/
 #header {
     position:fixed;
-      top: 0;
-      left: 0;
-      right:  0;
-      background: #420505;
-      overflow-y: auto;
-      width: auto;
-      z-index: 9997;
+    top: 0;
+    left: 0;
+    right:  0;
+    background: #420505;
+    overflow-y: auto;
+    width: auto;
+    z-index: 9997;
 }
-
-
+/*controle do carrossel (>)*/
 .carouselExampleControl{
     width: 100%;
-    
 }
-
+/*definindo fatores sobre o nome (Dev. Gabi March) que fica na navbar*/
 .navbar-brand{
     font-size: 24px;  
     margin: 0;
@@ -31,11 +31,10 @@ html, body{
     text-align: center;
     color: #ffffff
 }
-
 .navbar-nav{
     padding: auto;
 }
-
+/*definindo sobre os links na navbar*/
 .navbar-nav a,
 .navbar-nav a:focus{
     text-align: right;
@@ -44,6 +43,7 @@ html, body{
     transition: 0,3s;
     font-size: 15px;
 }
+/*definindo sobre os icones na navbar*/
 .navbar-nav a i,
 .navbar-nav a:focus i{
     text-align: right;
@@ -52,7 +52,7 @@ html, body{
     transition: 0,3s;
     font-size: 15px;
 }
-
+/*links ativos na navbar mudam de cor*/
 .navbar-nav a:hover,
 .navbar-nav .active,
 .navbar-nav .active:focus,
@@ -60,7 +60,7 @@ html, body{
     text-decoration: none;
     color: rgb(231, 180, 12);
 }
-
+/*icones ativos na navbar mj=udam de cor*/
 .navbar-nav a:hover i,
 .navbar-nav .active i,
 .navbar-nav .active:focus i,
@@ -68,11 +68,10 @@ html, body{
     text-decoration: none;
     color: rgb(231, 180, 12);
 }
-
 .section {
     padding: 100px ;
 }
-
+/*estilizando a foto*/
 .iam {
   max-width: 100%;
   width: 350px;
@@ -80,38 +79,35 @@ html, body{
   border: 4px solid #420505;
   border-radius: 50%;
 }
-
+/*colorindo amensagem de titulo*/
 .about-title{
     text-align: center;
     color: rgb(231, 180, 12);
-
 }
-
+/*colorindo a mensagem do corpo*/
 .about-corpo{
     color: #420505;
-
 }
-
+/*definindo uma cor  diferente para o fundo da seção*/
 #education{
     background-color:#f5e6e6
 }
-
+/*titulo da seção formação (Formação/cursos)*/
 .cv-title{
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
     color: rgb(231, 180, 12);
 }
-
+/*estilização dos itens*/
 .cv-item{
     padding: 0 0 20px 20px;
     margin-top: 2px;
     border-left: 2px solid  rgb(231, 180, 12); 
     position: relative;
     color: #420505;
-
 }
-
+/*definir atributos para o título de cada formação*/
 .cv-item h4 {
     line-height: 22px;
     font-weight: 600;
@@ -121,14 +117,14 @@ html, body{
     margin-bottom: 10px;
 
 }
-
+/*estilização do ano*/
 .cv-item h5{
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
 }
-
+/*barras nas laterais esquerdas da formaçao*/
 .cv-item::before {
     content: "";
     position: absolute;
@@ -140,52 +136,22 @@ html, body{
     background-color: #ffffff;
     border-radius: 50%;
 }
-
-#heading {
-    color: #420505;
-}
-
-.port-title{
-    color: #420505;
-}
-
 .filter {
     text-align: center;
     width: 100%
 }
-.filter a {
-    color:  #420505;
-    border: 1px solid  #420505;
-    padding: 10px 18px;
-    display: block;
-}
-
-.filter li {
-    display: inline-block;
-    padding: 5px;
-}
-
-.filter .current {
-    background-color: #420505;
-    border-color: rgb(231, 180, 12)
-}
-
-.section .heading {
+/*esrilizando o titulo*/
+.section .port-title {
     text-align: center;
     padding-bottom: 40px;
     width: 100%;
+    color: #420505;
 }
-
 .items li {
     display: inline-block;
     padding: 8px;
 }
-
-.itemsContainer {
-    width: 100%;
-}
-
-
+/*regulando as imagens e a transição das mesmas usando webkit*/
 .items li img {
     width: 90%;
     -webkit-transition: all 0.2s linear, 1s;
@@ -194,13 +160,13 @@ html, body{
     -ms-transition: all 0.2s linear, 1s;
     -transition: all 0.2s linear, 1s;
 }
-
+/*definindo cada item*/
 .items .item {
     position: relative;
     display: block;
     overflow: hidden;
 }
-
+/*definindo sobre os icones do item*/
 .items .icons {
     position: absolute;
     width: 90px;
@@ -211,13 +177,13 @@ html, body{
     text-align: center;
     z-index: 3;
 }
-
+/*colorindo os icones*/
 .items .icons i {
     color: rgb(231, 180, 12);
     font-size: 20px;
     margin-top: 9px;
 }
-
+/*colorindo o quadrado que comporta o ícone e utilizando webkit*/
 .items a {
     width: 40px;
     height: 40px;
@@ -232,7 +198,7 @@ html, body{
     -transition: all 0.2s linear, 0.5s;
 
 }
-
+/*um circulo tampa as imagens quando o cursor do mouse passa por cima*/
 .items .imageOverlay {
     width: 100%;
     height: 100%;
@@ -249,36 +215,30 @@ html, body{
     -ms-transition: all 0.2s linear, 1s;
     -transition: all 0.2s linear, 1s;
 }
-
+/*definindo a opacidade*/
 .items .item:hover .imageOverlay {
     opacity: 1;
 }
-
-
+/*projetando os links*/
 .items .projectLink {
     float: right;
     right: -200px;  
 }
-
 .items .item:hover .projectLink {
-    right: 0px;
-    
+    right: 0px;   
 }
-
+/*definindo a cor do fundo*/
 #contact{
     background-color:#f5e6e6
 }
-
+/*definindo as animaçoes: opacidade, como surgem...*/
 [data-anime] {
     opacity: 0;
     transition: 1s;
 }
-
-
 [data-anime="down"]{
     transform: translate3d(0, -100%, 0); 
 }
-
 [data-anime="up"]{
     transform: translate3d(0, 100%, 0); 
 }
@@ -288,30 +248,26 @@ html, body{
 [data-anime="right"]{ 
     transform: translate3d(50px, 0, 0); 
 }
-
-
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0,0,0);
 }
 
-
+/*escondendo o botão "enviando" enquanto o "enviar" aparece na tela*/
 #btn-enviar-loader{
     display: none;
 }
-
+/*mensagem de envio com sucesso do email*/
 #alerta{
     position: absolute;
     z-index: 10000;
     top: 30px;
     right: 30px;
-
 }
-
+/*definindo o background da seção e a cor da escrita*/
 .copyrightSection {
     background: #420505;
 }
-
 .copyrightSection p {
     color: rgb(231, 180, 12) ;
     font-size: 15px;
